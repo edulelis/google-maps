@@ -281,7 +281,7 @@ class WebService{
     protected function validateConfig( $service ){
 
             // Check for config file
-            if( !\Config::has('googlemaps')){
+            if( !config('googlemaps')){
 
                 throw new \ErrorException('Unable to find config file.');
             }

@@ -35,7 +35,7 @@ class GoogleMapsServiceProvider extends ServiceProvider {
 	public function register()
 	{
 
-            $this->app->bind('GoogleMaps', function($app)
+	    $this->app->bind('googlemaps', function($app)
 		{
 			return new \GoogleMaps\GoogleMaps();
 		});
